@@ -98,8 +98,8 @@ public class LaptopGenerator {
     }
 
     private LocalDate getDates() {
-        long minDay = LocalDate.of(2016, 1, 1).toEpochDay();
-        long maxDay = LocalDate.of(2020, 12, 31).toEpochDay();
+        long minDay = LocalDate.of(2014, 5, 1).toEpochDay();
+        long maxDay = LocalDate.of(2021, 1, 30).toEpochDay();
         long randomDay = ThreadLocalRandom.current().nextLong(minDay, maxDay);
 
         return LocalDate.ofEpochDay(randomDay);
